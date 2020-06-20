@@ -17,7 +17,7 @@ menuToggle.addEventListener('click', function(){
 
 let i = 0;
 const txt = 'world';
-const speed = 150;
+const speed = 70;
 
 const typeWriter = function() {
   if (i < txt.length) {
@@ -28,3 +28,27 @@ const typeWriter = function() {
 };
 
 typeWriter();
+
+
+function loadJSON() {
+  fetch('https://api.github.com/users/thamaragerigr/repos')
+  .then(
+    function(response) {
+      if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+          response.status);
+        return;
+      }
+      // Examine the text in the response
+      response.json().then(function(res) {
+        console.log(res);
+        const data = res
+      });
+    }
+  )
+  .catch(function(err) {
+    console.log('Fetch Error', err);
+  });
+
+}
+

@@ -1,4 +1,8 @@
 /* ============ Variables ============ */
+html {
+  scroll-behavior: smooth;
+}
+
 /* ============ Cursor styling ============ */
 .cursor {
   width: 2.5rem;
@@ -7,7 +11,12 @@
   opacity: .4;
   border-radius: 50%;
   position: absolute;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* ============ Top section ============ */
+.top-section {
+  height: 150px;
 }
 
 /* ============ Menu styling ============ */
@@ -57,7 +66,7 @@
 .nav .menu-wrapper {
   position: absolute;
   right: 3rem;
-  top: 4rem;
+  top: 2rem;
   text-align: right;
 }
 
@@ -141,7 +150,8 @@
 }
 
 .wrapper section {
-  height: 300px;
+  min-height: 90vh;
+  margin-bottom: 60px;
 }
 
 .wrapper section .tag {
@@ -170,7 +180,7 @@
   padding-right: 1rem;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: 0.015em solid rgba(57, 53, 54, 0.288);
+  border-right: 0.011em solid #393536;
   /* The typwriter cursor */
   -webkit-animation: blink-caret 1s step-end infinite;
           animation: blink-caret 1s step-end infinite;
@@ -181,7 +191,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: rgba(57, 53, 54, 0.514);
+    border-color: #393536;
   }
 }
 
@@ -190,7 +200,7 @@
     border-color: transparent;
   }
   50% {
-    border-color: rgba(57, 53, 54, 0.514);
+    border-color: #393536;
   }
 }
 
@@ -416,7 +426,6 @@
 }
 
 .portfolio .content .content-details {
-  position: absolute;
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;

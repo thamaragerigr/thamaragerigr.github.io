@@ -5,7 +5,10 @@ $subtitle:'Libre Baskerville', serif;
 $paragraph: 'Inter', sans-serif;
 // Colors
 $black: #393536;
-
+html {
+    scroll-behavior: smooth;
+  }
+  
 /* ============ Cursor styling ============ */
 .cursor{
     width: 2.5rem;
@@ -14,7 +17,11 @@ $black: #393536;
     opacity: .4;
     border-radius: 50%;
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+}
+/* ============ Top section ============ */
+.top-section{
+    height: 150px;
 }
 /* ============ Menu styling ============ */
 .nav{
@@ -48,7 +55,7 @@ $black: #393536;
     .menu-wrapper{
         position: absolute;
         right: 3rem;
-        top: 4rem;
+        top: 2rem;
         text-align: right;
         .menu-icon{
             cursor: pointer;
@@ -120,7 +127,8 @@ $black: #393536;
     width: 80vw;
     margin: auto;
     section{
-        height: 300px;
+        min-height: 90vh;
+        margin-bottom: 60px;
         .tag{
             font-family: $paragraph;
             font-size: .6rem;
@@ -144,12 +152,12 @@ $black: #393536;
                 width: 380px;
                 padding-right: 1rem;
                 overflow: hidden; /* Ensures the content is not revealed until the animation */
-                border-right: .015em solid rgba(57, 53, 54, 0.288); /* The typwriter cursor */
+                border-right: .011em solid rgba(57, 53, 54, 1); /* The typwriter cursor */
                 animation: 
                 blink-caret 1s step-end infinite;
                 @keyframes blink-caret {
                  from, to { border-color: transparent }
-                 50% { border-color:  rgba(57, 53, 54, 0.514); }
+                 50% { border-color:  rgba(57, 53, 54, 1); }
                 }
            }
         }
@@ -334,7 +342,7 @@ $black: #393536;
              width: 100%;
           } 
           .content-details {
-            position: absolute;
+            // position: absolute;
             text-align: center;
             padding-left: 1em;
             padding-right: 1em;
