@@ -128,7 +128,6 @@ html {
     margin: auto;
     section{
         min-height: 90vh;
-        margin-bottom: 60px;
         .tag{
             font-family: $paragraph;
             font-size: .6rem;
@@ -152,12 +151,12 @@ html {
                 width: 380px;
                 padding-right: 1rem;
                 overflow: hidden; /* Ensures the content is not revealed until the animation */
-                border-right: .011em solid rgba(57, 53, 54, 1); /* The typwriter cursor */
+                border-right: .011em solid rgba(57, 53, 54, .8); /* The typwriter cursor */
                 animation: 
                 blink-caret 1s step-end infinite;
                 @keyframes blink-caret {
                  from, to { border-color: transparent }
-                 50% { border-color:  rgba(57, 53, 54, 1); }
+                 50% { border-color:  rgba(57, 53, 54, .8); }
                 }
            }
         }
