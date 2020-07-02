@@ -197,6 +197,24 @@ html {
             font-weight: 400;
             line-height: 1.3rem;
         }
+        .button-wrapper{
+            text-align: center;
+            .cv-link {
+                background: $black;
+                color: white;
+                padding: .5rem 1rem;
+                border-radius: .2rem;
+                font-family: $paragraph;
+                font-size: .7rem;
+                text-align: center;
+                transition: .3s;
+                &:hover {
+                    text-decoration: none;
+                    background: $black;
+                    opacity: .8;
+                }
+        }
+        }
         .contact-info{
             margin-top: 1rem;
             .contact-link{

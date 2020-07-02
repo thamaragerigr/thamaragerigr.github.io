@@ -248,6 +248,28 @@ html {
   line-height: 1.3rem;
 }
 
+.wrapper section .button-wrapper {
+  text-align: center;
+}
+
+.wrapper section .button-wrapper .cv-link {
+  background: #393536;
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: .2rem;
+  font-family: "Inter", sans-serif;
+  font-size: .7rem;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapper section .button-wrapper .cv-link:hover {
+  text-decoration: none;
+  background: #393536;
+  opacity: .8;
+}
+
 .wrapper section .contact-info {
   margin-top: 1rem;
 }
