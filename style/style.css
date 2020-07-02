@@ -159,6 +159,10 @@ html {
   text-align: center;
 }
 
+.wrapper section.portfolio-top {
+  margin-top: 5rem;
+}
+
 .wrapper section h1 {
   font-family: "Playfair Display", serif;
   font-style: italic;
@@ -212,6 +216,17 @@ html {
   letter-spacing: -.2rem;
   margin-top: 0rem;
   margin-bottom: 0rem;
+  position: relative;
+}
+
+.wrapper section .section-header h2 span, .wrapper section .section-header h3 span {
+  position: absolute;
+  top: -200px;
+}
+
+.wrapper section .section-header h2 span#portfolio, .wrapper section .section-header h3 span#portfolio {
+  position: absolute;
+  top: -130px;
 }
 
 .wrapper section .section-header h4 {
@@ -372,6 +387,7 @@ html {
 .portfolio {
   max-width: 800px;
   margin: auto;
+  margin-top: 2rem;
 }
 
 .portfolio .content {

@@ -133,6 +133,9 @@ html {
             font-size: .6rem;
             text-align: center;
         }
+        &.portfolio-top {
+            margin-top: 5rem;
+        }
         h1{
             font-family: $title;
             font-style: italic;
@@ -167,6 +170,15 @@ html {
                 letter-spacing: -.2rem;
                 margin-top: 0rem;
                 margin-bottom: 0rem;
+                position: relative;
+                span{
+                    position:absolute; 
+                    top:-200px;
+                    &#portfolio {
+                      position:absolute; 
+                      top:-130px;
+                    }
+                }
             }
             h4 {
                 letter-spacing: -.2rem;
@@ -299,6 +311,7 @@ html {
 .portfolio{
     max-width: 800px;
     margin:  auto;
+    margin-top: 2rem;
     .content {
         position: relative;
         margin: auto;
