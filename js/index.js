@@ -52,3 +52,6 @@ function loadJSON() {
 
 }
 
+//Scroll animation
+
+ScrollReveal().reveal('.section', { delay: 300 })
