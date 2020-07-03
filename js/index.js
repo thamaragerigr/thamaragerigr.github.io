@@ -1,8 +1,8 @@
 //Mouse
-const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute('style', 'top:' + (e.pageY - 15) + 'px; left:' + (e.pageX -18) + 'px;')
-})
+// const cursor = document.querySelector('.cursor');
+// document.addEventListener('mousemove', e => {
+//     cursor.setAttribute('style', 'top:' + (e.pageY - 15) + 'px; left:' + (e.pageX -18) + 'px;')
+// })
 
 //Menu
 const menu = document.querySelector('.menu');
@@ -30,28 +30,28 @@ const typeWriter = function() {
 typeWriter();
 
 
-function loadJSON() {
-  fetch('https://api.github.com/users/thamaragerigr/repos')
-  .then(
-    function(response) {
-      if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-          response.status);
-        return;
-      }
-      // Examine the text in the response
-      response.json().then(function(res) {
-        console.log(res);
-        const data = res
-      });
-    }
-  )
-  .catch(function(err) {
-    console.log('Fetch Error', err);
-  });
+// function loadJSON() {
+//   fetch('https://api.github.com/users/thamaragerigr/repos')
+//   .then(
+//     function(response) {
+//       if (response.status !== 200) {
+//         console.log('Looks like there was a problem. Status Code: ' +
+//           response.status);
+//         return;
+//       }
+//       // Examine the text in the response
+//       response.json().then(function(res) {
+//         console.log(res);
+//         const data = res
+//       });
+//     }
+//   )
+//   .catch(function(err) {
+//     console.log('Fetch Error', err);
+//   });
 
-}
+// }
 
 //Scroll animation
 
-ScrollReveal().reveal('.section', { delay: 300 })
+ScrollReveal().reveal('.section', { delay: 350 })
