@@ -54,4 +54,4 @@ typeWriter();
 
 //Scroll animation
 
-ScrollReveal().reveal('.section', { delay: 350 })
+ScrollReveal().reveal('.section', { delay: 300 })

@@ -1,24 +1,14 @@
 /* ============ Variables ============ */
 // Fonts
-$title:'Playfair Display', serif;
-$subtitle:'Libre Baskerville', serif;
-$paragraph: 'Inter', sans-serif;
+$title:'Quicksand', sans-serif;
+$subtitle:'Quicksand', sans-serif;
+$paragraph: 'Quicksand', sans-serif;
 // Colors
 $black: #393536;
 html {
     scroll-behavior: smooth;
   }
   
-/* ============ Cursor styling ============ */
-.cursor{
-    width: 2.5rem;
-    height: 2.5rem;
-    border: .07rem solid $black;
-    opacity: .4;
-    border-radius: 50%;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0);
-}
 /* ============ Top section ============ */
 .top-section{
     height: 150px;
@@ -73,7 +63,7 @@ html {
             }
         }
         .menu{
-            font-family: 'Inter', sans-serif;
+            font-family: $paragraph;
             list-style: none;
             position: relative;
             top: 1rem;
@@ -167,7 +157,7 @@ html {
             text-align: center;
             font-family: $subtitle;
             h2, h3{
-                letter-spacing: -.2rem;
+                font-weight: 600;
                 margin-top: 0rem;
                 margin-bottom: 0rem;
                 position: relative;
@@ -181,13 +171,12 @@ html {
                 }
             }
             h4 {
-                letter-spacing: -.2rem;
                 font-weight: normal;
                 margin-top: 0rem;
                 margin-bottom: 0rem;
             }
             .number{
-                font-weight: bolder;
+                font-weight: 600;
             }
         }
         p{
