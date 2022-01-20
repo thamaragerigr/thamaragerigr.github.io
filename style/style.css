@@ -178,6 +178,14 @@ html {
           animation: blink-caret 1s step-end infinite;
 }
 
+.add-padding {
+  margin-left: 1rem;
+}
+
+.add-extra-padding {
+  margin-left: 2rem;
+}
+
 @-webkit-keyframes blink-caret {
   from, to {
     border-color: transparent;
