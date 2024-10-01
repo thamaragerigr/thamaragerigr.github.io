@@ -261,16 +261,8 @@ html {
         .icons{
             justify-content: center;
             i{
-                cursor: pointer;
                 font-size: 3rem;
                 padding: 1rem;
-                backface-visibility: hidden;
-	            transform: scale(1);
-                // transform:scale(.5);
-                transition: transform .3s ease-in-out;
-                &:hover{
-                    transform: scale(1.5);
-                }
             }
         }
     }
